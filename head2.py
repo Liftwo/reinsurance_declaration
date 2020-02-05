@@ -340,8 +340,8 @@ group = [list(g) for _, g in itertools.groupby(all_account, lambda x: x[15::])]
 group = [g for g in group if len(g) >= 2]
 print(group)
 
-n = 1
 for g in group:
+    n = 1
     for s in g[1::]:
         print(g[0])
         wb = xl.Workbooks.Open(g[0])
